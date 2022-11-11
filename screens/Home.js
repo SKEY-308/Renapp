@@ -7,6 +7,7 @@ import { COLORS, NFTData } from "../constants";
 const Home = () => {
   const [nftData, setNftData] = useState(NFTData);
 
+// --------- handleSearch
   const handleSearch = (value) => {
     if (value.length === 0) {
       setNftData(NFTData);
@@ -25,8 +26,11 @@ const Home = () => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
+
       <FocusedStatusBar backgroundColor={COLORS.primary} />
+
       <View style={{ flex: 1 }}>
+
         <View style={{ zIndex: 0 }}>
           <FlatList
             data={nftData}
@@ -47,8 +51,7 @@ const Home = () => {
             zIndex: -1,
           }}
         >
-          <View
-            style={{ height: 300, backgroundColor: COLORS.primary }} />
+          <View style={{ height: 300, backgroundColor: COLORS.primary }} />
           <View style={{ flex: 1, backgroundColor: COLORS.white }} />
         </View>
       </View>
