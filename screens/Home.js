@@ -20,7 +20,7 @@ const Home = () => {
       setNftData(NFTData);
     } else {
       setNftData(filteredData);
-    }
+    } 
   };
 
   return (
