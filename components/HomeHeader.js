@@ -42,6 +42,7 @@ const HomeHeader = ({ onSearch }) => {
             }}
           />
         </View>
+        
       </View>
 
       <View style={{ marginVertical: SIZES.font }}>

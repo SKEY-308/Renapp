@@ -28,6 +28,7 @@ const DetailsHeader = ({ data, navigation }) => (
 );
 
 const Details = ({ route, navigation }) => {
+  
   const { data } = route.params;
 
   return (
