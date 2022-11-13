@@ -9,6 +9,7 @@ const Home = () => {
 
 // --------- handleSearch
   const handleSearch = (value) => {
+
     if (value.length === 0) {
       setNftData(NFTData);
     }
@@ -19,9 +20,11 @@ const Home = () => {
 
     if (filteredData.length === 0) {
       setNftData(NFTData);
-    } else {
+    } 
+    else {
       setNftData(filteredData);
     } 
+
   };
 
   return (

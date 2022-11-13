@@ -28,11 +28,19 @@ const DetailsHeader = ({ data, navigation }) => (
 );
 
 const Details = ({ route, navigation }) => {
+  console.log(route)
   
   const { data } = route.params;
 
+  console.log
+  (`----------------------------------------------------------------------------`)
+    console.log(data);
+  console.log
+  (`----------------------------------------------------------------------------`)
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
+
       <FocusedStatusBar
         barStyle="dark-content"
         backgroundColor="transparent"
@@ -64,9 +72,13 @@ const Details = ({ route, navigation }) => {
         }}
         ListHeaderComponent={() => (
           <React.Fragment>
+
             <DetailsHeader data={data} navigation={navigation} />
+
             <SubInfo />
+
             <View style={{ padding: SIZES.font }}>
+
               <DetailsDesc data={data} />
 
               {data.bids.length > 0 && (
@@ -80,6 +92,7 @@ const Details = ({ route, navigation }) => {
                   Current Bid
                 </Text>
               )}
+              
             </View>
           </React.Fragment>
         )}

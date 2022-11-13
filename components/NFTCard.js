@@ -42,6 +42,7 @@ const NFTCard = ({ data }) => {
       <SubInfo />
 
       <View style={{ width: "100%", padding: SIZES.font }}>
+
         <NFTTitle
           title={data.name}
           subTitle={data.creator}
@@ -65,6 +66,7 @@ const NFTCard = ({ data }) => {
             handlePress={() => navigation.navigate("Details", { data })}
           />
         </View>
+        
       </View>
     </View>
   );
