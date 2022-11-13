@@ -51,8 +51,7 @@ const DetailsDesc = ({ data }) => {
               lineHeight: SIZES.large,
             }}
           >
-            {text}
-            {!readMore && "..."}
+            {text}{!readMore && "..."}
             <Text
               style={{
                 color: COLORS.primary,
